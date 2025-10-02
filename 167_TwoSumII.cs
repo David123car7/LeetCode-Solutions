@@ -16,9 +16,6 @@
  *   - If the sum is smaller, move the low pointer right to increase the sum.
  *   - Continue until the correct pair is found.
  *
- * Complexity:
- * - Time: O(n), since each pointer moves at most n steps.
- * - Space: O(1), constant extra space (just a few variables).
  *
  * Note: The return indices are 1-indexed as required by the problem statement.
  */
