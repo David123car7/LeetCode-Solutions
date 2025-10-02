@@ -1,2 +1,15 @@
 # LeetCode-Solutions
-All of my leet code solutions
+
+This repository contains my solutions to LeetCode problems. Each solution is stored in a separate file, numbered by the problem for easy navigation.  
+
+## Table of Contents
+
+| #   | Problem | Difficulty | 
+|-----|---------|------------|
+| [34](034_FirstLastPosOfSortedArray.cs)  | Find First and Last Position of Element in Sorted Array | Medium |
+
+## How to Use
+
+1. Clone the repository:
+```bash
+https://github.com/David123car7/LeetCode-Solutions.git
