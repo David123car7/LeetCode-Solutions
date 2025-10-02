@@ -6,9 +6,8 @@ This repository contains my solutions to LeetCode problems. Each solution is sto
 
 | #   | Problem | Difficulty | 
 |-----|---------|------------|
+| [1](001_TwoSum.cs)  | Find First and Last Position of Element in Sorted Array | Medium |## How to Use
 | [34](034_FirstLastPosOfSortedArray.cs)  | Find First and Last Position of Element in Sorted Array | Medium |
-
-## How to Use
 
 1. Clone the repository:
 ```bash
