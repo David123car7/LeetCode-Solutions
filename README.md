@@ -10,7 +10,7 @@ This repository contains my solutions to LeetCode problems. Each solution is sto
 | [2](002_AddTwoNumbers.cs) | Add two numbers represented as **linked lists** (digits stored in reverse order) | Medium |
 | [34](034_FirstLastPosOfSortedArray.cs) | Find the first and last position of a target in a **sorted** array | Medium |
 | [167](167_TwoSumII.cs) | Return indices of two numbers in a **sorted** array that add up to target | Medium |
-
+| [412](412_FizzBuzz.cs) | Produce FizzBuzz output for numbers from **1 to n** | Easy |
 
 ## How to Use
 
