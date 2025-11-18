@@ -4,6 +4,65 @@
  * Difficulty: Easy
  *
  * Description:
+ * You are given an array nums representing numbers from 1 to n.
+ * Exactly one number appears twice (the duplicated number),
+ * and exactly one number is missing from the range [1, n].
+ * Return an array: [duplicate, missing].
+ *
+ * Key Insight (In-Place Marking Technique):
+ * Since each value must map to an index (value -> index = value - 1),
+ * we can treat the array as its own bookkeeping structure.
+ * By flipping numbers to NEGATIVE at their mapped index, we "mark" them as visited.
+ *
+ * The Strategy:
+ * 1. First Pass — Find the Duplicated Number:
+ *    - For each number x, compute index = abs(x) - 1.
+ *    - If nums[index] is already negative, it means we've visited this number before → duplicate found.
+ *    - Otherwise, make nums[index] negative to mark it as visited.
+ *
+ * 2. Second Pass — Find the Missing Number:
+ *    - After marking, any index 'i' whose value is still POSITIVE was never visited.
+ *    - This means the missing number is i + 1.
+ *
+ * Example:
+ * If nums[index] is negative, it means the number (index + 1) appeared before.
+ * If nums[index] stays positive, it means the number (index + 1) never appeared.
+ *
+ * Time Complexity: O(n)
+ * - One pass to detect the duplicate, one pass to detect the missing number.
+ *
+ * Space Complexity: O(1)
+ * - In-place marking, no extra data structures used.
+ *   (Ignore the returned result array, as per standard conventions.)
+ */
+public int[] FindErrorNums(int[] nums) {
+    int[] result = [0, 0];
+    
+    for(int i=0; i<nums.Length; i++){
+        int index = Math.Abs(nums[i]) - 1;
+        if(nums[index] < 0){    
+            result[0] = index+1;
+        }
+        else
+            nums[index] *= -1;
+    }
+
+    for(int i=0; i<nums.Length; i++){
+        if(nums[i] > 0){
+            result[1] = i+1;
+        }
+    }
+
+
+    return result;
+}
+
+/*
+ * LeetCode Problem: Set Mismatch (645)
+ * URL: https://leetcode.com/problems/set-mismatch/
+ * Difficulty: Easy
+ *
+ * Description:
  * You are given an array 'nums' containing n numbers taken from the range 1..n.
  * Exactly one number is duplicated and one number is missing.
  * Return an array where:
