@@ -49,3 +49,49 @@ public int[] FindErrorNums(int[] nums) {
     
     return result;
 }
+
+/*
+ * LeetCode Problem: Set Mismatch (645)
+ * URL: https://leetcode.com/problems/set-mismatch/
+ * Difficulty: Easy
+ *
+ * Description:
+ * Given an array 'nums' where numbers from 1..n should appear exactly once,
+ * one number appears twice and one number is missing.
+ * Return: 
+ *   result[0] → duplicated number
+ *   result[1] → missing number
+ *
+ * Approach (Sorting + Arithmetic):
+ *   1. Sort the array so that any duplicate appears next to itself.
+ *   2. Compute the expected sum of numbers from 1..n using:
+ *          n(n + 1) / 2
+ *   3. Compute the actual sum of the sorted array.
+ *   4. Find the duplicated number by checking where nums[i] == nums[i + 1].
+ *   5. The missing number can then be calculated using:
+ *
+ *        missing = expectedSum - (sum - duplicated)
+ *
+ *   Is slower because it has to sort the array because first sorts the array.
+ */
+public int[] FindErrorNums(int[] nums) {
+    int[] result = [0,0];
+    Array.Sort(nums);
+
+    int expectedSum = nums.Length * (nums.Length + 1) / 2;
+    int sum = 0;
+    for(int i=0; i<nums.Length; i++){
+        sum += nums[i];
+    }
+
+    for(int i=0; i<nums.Length-1; i++){
+        if(nums[i] == nums[i+1]){
+            result[0] = nums[i];
+            result[1] = expectedSum - (sum - nums[i]);
+            break;
+        }
+    }
+
+
+    return result;
+}
