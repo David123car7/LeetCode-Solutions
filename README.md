@@ -14,7 +14,7 @@ This repository contains my solutions to LeetCode problems. Each solution is sto
 | [412](CSharp/412_FizzBuzz.cs) | Produce FizzBuzz output for numbers from **1 to n** | Easy |
 | [414](CSharp/414_ThirdMaximumNumber.cs) | Return the **third distinct maximum** in the array | Easy |
 | [645](CSharp/645_SetMismatch.cs) | Find the **duplicated** and **missing** numbers in the array | Easy |
-
+| [1365](CSharp/1365_SmallerNumbersThanCurrent.cs) | Count how many numbers are **smaller** than the current element | Easy |
 
 ## 🟥 C++ Solutions
 
