@@ -8,6 +8,9 @@
  * Exactly one number appears twice (the duplicated number),
  * and exactly one number is missing from the range [1, n].
  * Return an array: [duplicate, missing].
+ */
+
+/*
  *
  * Key Insight (In-Place Marking Technique):
  * Since each value must map to an index (value -> index = value - 1),
@@ -58,16 +61,6 @@ public int[] FindErrorNums(int[] nums) {
 }
 
 /*
- * LeetCode Problem: Set Mismatch (645)
- * URL: https://leetcode.com/problems/set-mismatch/
- * Difficulty: Easy
- *
- * Description:
- * You are given an array 'nums' containing n numbers taken from the range 1..n.
- * Exactly one number is duplicated and one number is missing.
- * Return an array where:
- *   - result[0] → the duplicated number
- *   - result[1] → the missing number
  *
  * Key Insight:
  * Every number from 1..n should appear exactly once.
@@ -110,17 +103,6 @@ public int[] FindErrorNums(int[] nums) {
 }
 
 /*
- * LeetCode Problem: Set Mismatch (645)
- * URL: https://leetcode.com/problems/set-mismatch/
- * Difficulty: Easy
- *
- * Description:
- * Given an array 'nums' where numbers from 1..n should appear exactly once,
- * one number appears twice and one number is missing.
- * Return: 
- *   result[0] → duplicated number
- *   result[1] → missing number
- *
  * Approach (Sorting + Arithmetic):
  *   1. Sort the array so that any duplicate appears next to itself.
  *   2. Compute the expected sum of numbers from 1..n using:
