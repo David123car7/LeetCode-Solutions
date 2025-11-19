@@ -14,6 +14,7 @@ This repository contains my solutions to LeetCode problems. Each solution is sto
 | [412](CSharp/412_FizzBuzz.cs) | Produce FizzBuzz output for numbers from **1 to n** | Easy |
 | [414](CSharp/414_ThirdMaximumNumber.cs) | Return the **third distinct maximum** in the array | Easy |
 | [448](CSharp/448_FindDisappearedNumbers.cs) | Find all numbers in range **[1, n]** missing from the array | Easy |
+| [636](CSharp/636_ExclusiveTimeOfFunctions.cs) | Compute the **exclusive running time** of nested function calls from logs | Medium |
 | [645](CSharp/645_SetMismatch.cs) | Find the **duplicated** and **missing** numbers in the array | Easy |
 | [1365](CSharp/1365_SmallerNumbersThanCurrent.cs) | Count how many numbers are **smaller** than the current element | Easy |
 | [1441](CSharp/1441_BuildArrayWithStackOps.cs) | Build the target array using **Push/Pop simulation** with numbers from 1 to n | Easy |
