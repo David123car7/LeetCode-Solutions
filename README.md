@@ -4,20 +4,20 @@ This repository contains my solutions to LeetCode problems. Each solution is sto
 
 ## 🟦 C# Solutions
 
-| #   | Problem | Difficulty |
-|-----|---------|------------|
-| [1](CSharp/001_TwoSum.cs)   | Return indices of two numbers in an **unsorted** array that add up to target | Easy |
-| [2](CSharp/002_AddTwoNumbers.cs) | Add two numbers represented as **linked lists** (digits stored in reverse order) | Medium |
-| [9](CSharp/009_PalindromeNumber.cs) | Check if an integer is a **palindrome** without converting to string | Easy |
-| [34](CSharp/034_FirstLastPosOfSortedArray.cs) | Find the first and last position of a target in a **sorted** array | Medium |
-| [167](CSharp/167_TwoSumII.cs) | Return indices of two numbers in a **sorted** array that add up to target | Medium |
-| [412](CSharp/412_FizzBuzz.cs) | Produce FizzBuzz output for numbers from **1 to n** | Easy |
-| [414](CSharp/414_ThirdMaximumNumber.cs) | Return the **third distinct maximum** in the array | Easy |
-| [448](CSharp/448_FindDisappearedNumbers.cs) | Find all numbers in range **[1, n]** missing from the array | Easy |
-| [636](CSharp/636_ExclusiveTimeOfFunctions.cs) | Compute the **exclusive running time** of nested function calls from logs | Medium |
-| [645](CSharp/645_SetMismatch.cs) | Find the **duplicated** and **missing** numbers in the array | Easy |
-| [1365](CSharp/1365_SmallerNumbersThanCurrent.cs) | Count how many numbers are **smaller** than the current element | Easy |
-| [1441](CSharp/1441_BuildArrayWithStackOps.cs) | Build the target array using **Push/Pop simulation** with numbers from 1 to n | Easy |
+| #   | Problem | Category | Difficulty |
+|-----|----------|-----------|------------|
+| [1](CSharp/001_TwoSum.cs)   | Two Sum | HashMap / Array | Easy |
+| [2](CSharp/002_AddTwoNumbers.cs) | Add Two Numbers | Linked List | Medium |
+| [9](CSharp/009_PalindromeNumber.cs) | Palindrome Number | Math | Easy |
+| [34](CSharp/034_FirstLastPosOfSortedArray.cs) | Find First and Last Position of Element in Sorted Array | Binary Search | Medium |
+| [167](CSharp/167_TwoSumII.cs) | Two Sum II – Input array is sorted | Two Pointers | Medium |
+| [412](CSharp/412_FizzBuzz.cs) | Fizz Buzz | Simulation | Easy |
+| [414](CSharp/414_ThirdMaximumNumber.cs) | Third Maximum Number | Array / Tracking | Easy |
+| [448](CSharp/448_FindDisappearedNumbers.cs) | Find All Numbers Disappeared in an Array | In-Place Marking / Array | Easy |
+| [636](CSharp/636_ExclusiveTimeOfFunctions.cs) | Exclusive Time of Functions | Stack | Medium |
+| [645](CSharp/645_SetMismatch.cs) | Set Mismatch | In-Place Marking / Array | Easy |
+| [1365](CSharp/1365_SmallerNumbersThanCurrent.cs) | How Many Numbers Are Smaller Than the Current Number | Sorting / HashMap | Easy |
+| [1441](CSharp/1441_BuildArrayWithStackOps.cs) | Build an Array With Stack Operations | Stack | Easy |
 
 ## 🟥 C++ Solutions
 
