@@ -16,6 +16,7 @@ This repository contains my solutions to LeetCode problems. Each solution is sto
 | [448](CSharp/448_FindDisappearedNumbers.cs) | Find all numbers in range **[1, n]** missing from the array | Easy |
 | [645](CSharp/645_SetMismatch.cs) | Find the **duplicated** and **missing** numbers in the array | Easy |
 | [1365](CSharp/1365_SmallerNumbersThanCurrent.cs) | Count how many numbers are **smaller** than the current element | Easy |
+| [1441](CSharp/1441_BuildArrayWithStackOps.cs) | Build the target array using **Push/Pop simulation** with numbers from 1 to n | Easy |
 
 ## 🟥 C++ Solutions
 
