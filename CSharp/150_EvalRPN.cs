@@ -30,28 +30,29 @@
  * Space Complexity: O(n)
  * - In the worst case, all tokens are numbers and stored on the stack temporarily.
  */
-
 public int EvalRPN(string[] tokens) {
     Stack<int> stack = new Stack<int>();
     for(int i=0; i<tokens.Length; i++){
-        int token = 0;
-        if(int.TryParse(tokens[i], out _))
-            stack.Push(int.Parse(tokens[i]));
-        else{
+        int x = 0;
+        
+        if(tokens[i] == "+")
+            x = stack.Pop() + stack.Pop();
+        else if(tokens[i] == "-"){
             int num2 = stack.Pop();
             int num1 = stack.Pop();
-            int x = 0;
-            if(tokens[i] == "+")
-                x = num1 + num2;
-            else if(tokens[i] == "-")
-                x = num1 - num2;
-            else if(tokens[i] == "*")
-                x = num1 * num2;
-            else
-                x = num1 / num2;
-
-            stack.Push(x);
+            x = num1 - num2;
         }
+        else if(tokens[i] == "*")
+            x = stack.Pop() * stack.Pop();
+        else if(tokens[i] == "/"){
+            int num2 = stack.Pop();
+            int num1 = stack.Pop();
+            x = num1 / num2;
+        }
+        else
+            x = int.Parse(tokens[i]);
+            
+        stack.Push(x);
     }
     return stack.Pop();
 }
