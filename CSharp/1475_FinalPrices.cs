@@ -53,9 +53,6 @@ public int[] FinalPrices(int[] prices) {
  *
  * 2. If no valid j is found, discount remains 0.
  *
- * This approach directly follows the definition of the problem.
- *
- *
  * Time Complexity: O(n²)
  * - For each element, we may scan the rest of the array.
  *
