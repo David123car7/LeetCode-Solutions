@@ -17,6 +17,7 @@ This repository contains my solutions to LeetCode problems. Each solution is sto
 | [448](CSharp/448_FindDisappearedNumbers.cs) | Find All Numbers Disappeared in an Array | In-Place Marking / Array | Easy |
 | [636](CSharp/636_ExclusiveTimeOfFunctions.cs) | Exclusive Time of Functions | Stack | Medium |
 | [645](CSharp/645_SetMismatch.cs) | Set Mismatch | In-Place Marking / Array | Easy |
+| [739](CSharp/739_DailyTemperatures.cs) | Daily Temperatures | Stack / Monotonic Stack | Medium |
 | [1365](CSharp/1365_SmallerNumbersThanCurrent.cs) | How Many Numbers Are Smaller Than the Current Number | Sorting / HashMap | Easy |
 | [1441](CSharp/1441_BuildArrayWithStackOps.cs) | Build an Array With Stack Operations | Stack / Simulation | Easy |
 | [1475](CSharp/1475_FinalPrices.cs) | Final Prices With a Special Discount in a Shop | Stack / Monotonic Stack | Easy |
