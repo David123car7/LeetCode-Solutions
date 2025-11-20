@@ -10,6 +10,7 @@ This repository contains my solutions to LeetCode problems. Each solution is sto
 | [2](CSharp/002_AddTwoNumbers.cs) | Add Two Numbers | Linked List | Medium |
 | [9](CSharp/009_PalindromeNumber.cs) | Palindrome Number | Math | Easy |
 | [34](CSharp/034_FirstLastPosOfSortedArray.cs) | Find First and Last Position of Element in Sorted Array | Binary Search | Medium |
+| [150](CSharp/150_EvalRPN.cs) | Evaluate Reverse Polish Notation | Stack | Medium |
 | [167](CSharp/167_TwoSumII.cs) | Two Sum II – Input array is sorted | Two Pointers | Medium |
 | [412](CSharp/412_FizzBuzz.cs) | Fizz Buzz | Simulation | Easy |
 | [414](CSharp/414_ThirdMaximumNumber.cs) | Third Maximum Number | Array / Tracking | Easy |
