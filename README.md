@@ -12,6 +12,7 @@ This repository contains my solutions to LeetCode problems. Each solution is sto
 | [34](CSharp/034_FirstLastPosOfSortedArray.cs) | Find First and Last Position of Element in Sorted Array | Binary Search | Medium |
 | [150](CSharp/150_EvalRPN.cs) | Evaluate Reverse Polish Notation | Stack | Medium |
 | [167](CSharp/167_TwoSumII.cs) | Two Sum II – Input array is sorted | Two Pointers | Medium |
+| [242](CSharp/242_ValidAnagram.cs) | Valid Anagram | Hash Table | Easy |
 | [412](CSharp/412_FizzBuzz.cs) | Fizz Buzz | Simulation | Easy |
 | [414](CSharp/414_ThirdMaximumNumber.cs) | Third Maximum Number | Array / Tracking | Easy |
 | [448](CSharp/448_FindDisappearedNumbers.cs) | Find All Numbers Disappeared in an Array | In-Place Marking / Array | Easy |
