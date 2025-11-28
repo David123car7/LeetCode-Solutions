@@ -13,6 +13,7 @@ This repository contains my solutions to LeetCode problems. Each solution is sto
 | [49](CSharp/49_GroupAnagrams.cs) | Group Anagrams | Hash Table | Medium |
 | [150](CSharp/150_EvalRPN.cs) | Evaluate Reverse Polish Notation | Stack | Medium |
 | [167](CSharp/167_TwoSumII.cs) | Two Sum II – Input array is sorted | Two Pointers | Medium |
+| [238](CSharp/238_ProductExceptSelf.cs) | Product of Array Except Self | Prefix & Suffix | Medium |
 | [242](CSharp/242_ValidAnagram.cs) | Valid Anagram | Hash Table | Easy |
 | [347](CSharp/347_TopKFrequentElements.cs) | Top K Frequent Elements | Bucket Sort | Medium |
 | [412](CSharp/412_FizzBuzz.cs) | Fizz Buzz | Simulation | Easy |
