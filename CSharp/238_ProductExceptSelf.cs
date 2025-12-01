@@ -31,32 +31,26 @@
  * Space Complexity: O(N)
  * - We use two auxiliary arrays (prefix and suffix) of size N.
  */
-public int[] ProductExceptSelf(int[] nums) {
-    int[] prefix = new int[nums.Length];
-    int[] sufix = new int[nums.Length];
-    int[] result = new int[nums.Length];
+    public int[] ProductExceptSelf(int[] nums) {
+        int[] result = new int[nums.Length];
+        int[] prefix = new int[nums.Length];
+        int[] sufix = new int[nums.Length];
 
-    prefix[0] = nums[0];
-    for(int i=1; i<nums.Length; i++){
-        prefix[i] = nums[i] * prefix[i-1];
-    }
+        prefix[0] = nums[0];
+        sufix[nums.Length-1] = nums[nums.Length-1];
 
-    sufix[nums.Length-1] = nums[nums.Length-1];
-    for(int i=nums.Length-2; i>=0; i--){
-        sufix[i] = nums[i] * sufix[i+1];
-    }
-
-    for(int i=0; i<nums.Length; i++){
-        if(i==0){
-            result[i] = sufix[i+1];
+        int index = nums.Length-2;
+        for(int i=1; i<nums.Length; i++){
+            prefix[i] = nums[i] * prefix[i-1];
+            sufix[index] = nums[index] * sufix[index+1];
+            index--;
         }
-        else if(i==nums.Length-1){
-            result[i] = prefix[i-1]; 
-        }
-        else{
-            result[i] = prefix[i-1] * sufix[i+1] ;
-        }
-    }
 
-    return result;
-}
+        result[0] = sufix[1];
+        result[nums.Length-1] = prefix[nums.Length-2];
+        for(int i=1; i<nums.Length-1; i++){
+            result[i] = prefix[i-1] * sufix[i+1];
+        }
+
+        return result;
+    }
