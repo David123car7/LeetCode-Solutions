@@ -28,10 +28,10 @@ This repository contains my solutions to LeetCode problems. Each solution is sto
 
 ## 🟥 C++ Solutions
 
-| #   | Problem | Difficulty |
-|-----|---------|------------|
+| #   | Problem | Category | Difficulty |
+|-----|----------|-----------|------------|
 | [20](CPP/20_ValidParentheses.cpp) | Valid Parentheses | Stack | Easy |
-| [414](CPP/414_ThirdMaximumNumber.cpp) | Return the **third distinct maximum** in the array | Easy |
+| [414](CPP/414_ThirdMaximumNumber.cpp) | Return the **third distinct maximum** in the array | Array | Easy |
 
 ## How to Use
 
